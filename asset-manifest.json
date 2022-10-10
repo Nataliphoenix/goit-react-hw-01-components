@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Nataliphoenix/goit-react-hw-01-components/static/css/main.51019851.css",
-    "main.js": "/Nataliphoenix/goit-react-hw-01-components/static/js/main.da3eadf6.js",
+    "main.js": "/Nataliphoenix/goit-react-hw-01-components/static/js/main.a19fd7af.js",
     "index.html": "/Nataliphoenix/goit-react-hw-01-components/index.html",
     "main.51019851.css.map": "/Nataliphoenix/goit-react-hw-01-components/static/css/main.51019851.css.map",
-    "main.da3eadf6.js.map": "/Nataliphoenix/goit-react-hw-01-components/static/js/main.da3eadf6.js.map"
+    "main.a19fd7af.js.map": "/Nataliphoenix/goit-react-hw-01-components/static/js/main.a19fd7af.js.map"
   },
   "entrypoints": [
     "static/css/main.51019851.css",
-    "static/js/main.da3eadf6.js"
+    "static/js/main.a19fd7af.js"
   ]
 }
