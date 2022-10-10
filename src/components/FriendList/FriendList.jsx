@@ -15,13 +15,10 @@ export const FriendList = ({friends}) => {
                   />
                 ))}
             </List>
-        </FriendListContainer>
+            </FriendListContainer>
     )
 };
 
 FriendList.propTypes = {
-    id:PropTypes.string.isRequired,
-    avatar:PropTypes.string.isRequired,
-    name:PropTypes.string.isRequired,
-    isOnline:PropTypes.bool.isRequired,
-};
+    friends: PropTypes.array.isRequired,
+  };

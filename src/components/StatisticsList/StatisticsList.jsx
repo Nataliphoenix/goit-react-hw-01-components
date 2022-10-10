@@ -4,10 +4,10 @@ import {StatisticsInfo, StatisticsItem, StatisticsLabel, StatisticsPercentage} f
 export const StatisticsList =({stats}) => {
      return (
      <StatisticsInfo>
-      {stats.map(data =>(
-        <StatisticsItem key={data.id}>
-        <StatisticsLabel>{data.label}</StatisticsLabel>
-        <StatisticsPercentage>{data.percentage}%</StatisticsPercentage>
+      {stats.map(({ id, label, percentage }) =>(
+        <StatisticsItem key={id}>
+        <StatisticsLabel>{label}</StatisticsLabel>
+        <StatisticsPercentage>{percentage}%</StatisticsPercentage>
         </StatisticsItem>
       ))}
     </StatisticsInfo>
@@ -15,7 +15,11 @@ export const StatisticsList =({stats}) => {
 };
 
 StatisticsList.propTypes = {
-  id:PropTypes.string.isRequired,
-  label:PropTypes.string.isRequired,
-  percentage:PropTypes.string.isRequired,
-};
+  stats: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      label: PropTypes.string.isRequired,
+      percentage: PropTypes.number.isRequired,
+    })
+    ),
+  };
