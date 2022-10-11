@@ -2,7 +2,6 @@ import { Profile } from '../Profile/Profile';
 import user from '../data/user.json';
 import {Container} from './App.styled';
 
-import {StatisticsList} from '../StatisticsList/StatisticsList';
 import {Statistics} from '../Statistics/Statistics';
 import data from '../data/data.json';
 
@@ -24,9 +23,7 @@ export const App = () => {
         stats={user.stats}
       />
 
-      <Statistics>
-        <StatisticsList stats={data} />
-      </Statistics>
+      <Statistics stats={data} />
 
       <FriendList friends={friends} />
 
@@ -35,20 +32,3 @@ export const App = () => {
     </Container>
   )
 }
-
-// export const App = () => {
-//   return (
-//     <div
-//       style={{
-//         height: '100vh',
-//         display: 'flex',
-//         justifyContent: 'center',
-//         alignItems: 'center',
-//         fontSize: 40,
-//         color: '#010101'
-//       }}
-//     >
-//       React homework template
-//     </div>
-//   );
-// };
